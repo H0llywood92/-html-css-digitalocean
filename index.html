@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+<!-- CHIEDERE PERCHE NON POSSO INSERIRE IL FOR NELLE FORM MA SERVE L'ID, CONTROLLARE IL TASTO SIGN UP E L'ALLINEAMENTO VERTICALE NELLA NAV-BAR -->
 <body>
     <!-- HEADER -->
     <header>
@@ -92,11 +93,11 @@
                             <!-- Col Right / Form -->
                             <form action="#">
                                 <div class="form-group">
-                                    <label for="Email" class="sr-only">Email address</label>
+                                    <label class="sr-only" id="Email" >Email address</label>
                                     <input type="text" id="input-email" name="input-email" class="form-control"  placeholder="Email">
                                   </div>
                                   <div class="form-group">
-                                    <label for="Password" class="sr-only">Email address</label>
+                                    <label class="sr-only" id="Password" >Email address</label>
                                     <input type="text" id="input-password" name="input-password" class="form-control"  placeholder="Password">
                                   </div>
                             </form>
@@ -106,7 +107,7 @@
                                 <button type="button" class="btn btn-primary btn-sm btn-block">Create your account</button>
                                 <button type="button" id="block-position" class="btn btn-default btn-sm btn-block"><span id="google-logo-button"><img src="img/google-icon.png" alt="google logo"></span> Sign up with google</button>
                             </div>
-                            <p>By singing up you agree to the <span class="lightblue-text"><ins>Terms of service</ins>.</span></p>
+                            <p>By singing up you agree to the <a class="lightblue-text"><ins>Terms of service</ins>.</a></p>
                         </div>
                     </div>
                 </div>
@@ -118,8 +119,7 @@
     <!-- MAIN -->
     <main>
         <!-- Software Presentation -->
-        <section class="bg-grey">
-            <div class="software-list">
+        <section class="software-list bg-grey">
                 <div class="container">
                     <div class="software-content text-center">
                         <h5 class=" grey-text text-uppercase">innovative businesses trust digitalocean</h5>
@@ -151,10 +151,81 @@
                         <a class="lightblue-text" href="#"> View customer stories <span class="right-chevron"><i class="fas fa-chevron-right"></i></span> </a>
                     </div>
                 </div>
-            </div>
         </section>
 
-        <section class=""></section>
+        <!-- Specification -->
+        <section class="specification">
+            <div class="container">
+                <!-- Title -->
+                <div class="sepicification-title text-center">
+                    <h3>Deploy and scale seamlessly</h3>
+                    <p class="grey-text">Our optimized configuration process saves youe team time when running and scaling distributed applications, Al & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+                </div>
+                <!-- Row / 2 Col - Specifications-app-lists -->
+               <div class="specification-content">
+                    <div class="row">
+                        
+                        <div class="col-xs-12 col-sm-6 ">
+                            <div class="menu-left text-center">
+                                <ul class="menu-content grey-text text-left">
+                                    <li>Deploy</li>
+    
+                                    <li>Manage</li>
+    
+                                    <li>Secure</li>
+    
+                                    <li>Scale</li>
+    
+                                    <li>Monitor</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="menu-right">
+                               <div class="block-pad">
+                                    <!-- Row 1 -->
+                                    <div class="row">
+                                        <!-- Col Left -->
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="img/cluster-deploy.svg" alt="cluster">
+                                            <h4>Cluster deployments</h4>
+                                            <p class="grey-text">Provision multiple Droplets (virtual machines) in seconds with our control panle, CLI, or directly against our API.</p>
+                                        </div>
+
+                                        <!-- Col Right -->
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="img/optimized-compute.svg" alt="optimized">
+                                            <h4>Optimized compute types</h4>
+                                            <p class="grey-text">Get the compute resources you need with Standard or Optimized Droplets.</p>
+                                        </div>
+                                    </div>
+                               </div>
+
+                                <div class="block-pad">
+                                    <!-- Row 2 -->
+                                    <div class="row">
+                                        <!-- Col Left -->
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="img/one-click.svg" alt="one-click">
+                                            <h4>One-click apps</h4>
+                                            <p class="grey-text">Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                                        </div>
+                                        
+                                        <!-- Col Right -->
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="img/global.svg" alt="globe">
+                                            <h4>Global availability</h4>
+                                            <p class="grey-text">Deploy to any of our data center regions around the world.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
 
         <section class="bg-grey"></section>
 
