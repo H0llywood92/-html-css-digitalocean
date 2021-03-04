@@ -44,6 +44,14 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(to top left, #001e9a, #001e9a);
     color: white;
 }
+.bg-blue-gradient h1,
+.bg-blue-gradient h2,
+.bg-blue-gradient h3,
+.bg-blue-gradient h4,
+.bg-blue-gradient h5,
+.bg-blue-gradient h6 {
+    color: white;
+}
 
 .round {
     height: 8px;
@@ -76,6 +84,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 8px;
 }
 
+.custom-button {
+    color: #2485fd;
+    border-color: #2485fd;
+    font-weight: 500;
+}
+
 /* HEADER */
 .top-nav {
     padding: 10px 0;
@@ -96,11 +110,6 @@ h1, h2, h3, h4, h5, h6 {
 .top-nav ul li a {
     color: #2485fd;
     font-size: 14px
-}
-
-.top-nav .menu-right .btn {
-    color: #2485fd;
-    border-color: #2485fd;
 }
 
 /* Burger Menu */
@@ -184,11 +193,21 @@ main .software-list ul li img {
 }
 
 /* Slide Section */
-.slide-section .left-chevron,
-.slide-section .right-chevron {
+/* Slide section 1 chevron */
+.slide-section .content-col .left-chevron,
+.slide-section .content-col .right-chevron {
     line-height: 205px;
     font-size: 25px;
 }
+/* End Slide section 2 chevron */
+
+/* Slide section 2 chevron */
+.slide-section-two .content-col .left-chevron,
+.slide-section-two .content-col .right-chevron {
+    line-height: 215px;
+    font-size: 25px;
+}
+/* End Slide section 2 chevron */
 
 .slide-section .padding-col {
     padding: 0 15px;
@@ -201,6 +220,21 @@ main .software-list ul li img {
 
 .slide-content ul {
     padding-left: 0;
+}
+
+.slide-section .content-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.slide-section .content-box p {
+    padding-top: 20px;
+}
+
+.slide-section .content-box small {
+    color: #031b4f;
+    font-weight: 500;
 }
 
 /* Services Regions */
@@ -235,6 +269,11 @@ main .software-list ul li img {
     display: inline-block;
 }
 
+.get-started .custom-button {
+    width: 160px;
+    font-weight: 500;
+}
+
 /* Media Query XS */
 @media all and (max-width: 767px){
     /* MAIN */
@@ -265,9 +304,19 @@ main .software-list ul li img {
 
 /* Media Query SM*/
 @media all and (min-width: 768px) and (max-width: 991px) {
-    .slide-section .left-chevron,
-    .slide-section .right-chevron {
-        line-height: 160px;
-        font-size: 20px;
-    }
+    /* Slide section 1 chevron */
+.slide-section .content-col .left-chevron,
+.slide-section .content-col .right-chevron {
+    line-height: 205px;
+    font-size: 25px;
+}
+/* End Slide section 2 chevron */
+
+/* Slide section 2 chevron */
+.slide-section-two .content-col .left-chevron,
+.slide-section-two .content-col .right-chevron {
+    line-height: 215px;
+    font-size: 25px;
+}
+/* End Slide section 2 chevron */
 }
