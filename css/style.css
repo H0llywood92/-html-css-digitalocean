@@ -20,15 +20,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #031b4f;
 }
 
-.down-chevron {
-    font-size: 9px;
-    vertical-align: middle;
-}
-
-.right-chevron {
-    font-size: 8px;
-}
-
 .white-text {
     color: white;
 }
@@ -42,8 +33,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .block-pad {
-    padding: 10px 0;
+    padding: 30px 0;
 }
+
+.bg-grey {
+    background-color: #f3f5f9;
+}
+
+.bg-blue-gradient {
+    background: linear-gradient(to top left, #001e9a, #001e9a);
+    color: white;
+}
+
+.round {
+    height: 8px;
+    width: 8px;
+    border: 1px solid #2485fd;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.full-round {
+    background-color: #0069ff;
+}
+
+.sub-t {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Common Chevron */
+.down-chevron {
+    font-size: 9px;
+    vertical-align: middle;
+}
+
+.right-chevron {
+    font-size: 8px;
+}
+
+.left-chevron {
+    font-size: 8px;
+}
+
 /* HEADER */
 .top-nav {
     padding: 10px 0;
@@ -57,23 +89,24 @@ h1, h2, h3, h4, h5, h6 {
 .top-nav ul li {
     display: inline-block;
     vertical-align: middle;
-    padding-top: 7px;
+    padding-top: 8px;
     padding-right: 10px;
 }
 
 .top-nav ul li a {
     color: #2485fd;
-    font-size: 13px
-}
-
-.burger-menu {
-    color: #2485fd;
-    line-height: 35px;
+    font-size: 14px
 }
 
 .top-nav .menu-right .btn {
-    color: #006aff;
-    border-color: #006aff;;
+    color: #2485fd;
+    border-color: #2485fd;
+}
+
+/* Burger Menu */
+.burger-menu {
+    color: #2485fd;
+    line-height: 35px;
 }
 
 /* Banner */
@@ -112,7 +145,6 @@ h1, h2, h3, h4, h5, h6 {
 /* MAIN */
 /* Software-list */
 main .software-list {
-    background-color: #f3f5f9;
     padding: 30px 0;
 }
 
@@ -128,15 +160,17 @@ main .software-list ul li img {
     height: auto;
 }
 
-
-
-
  /* Specification */
  .specification {
     padding: 30px 0 ;
  }
+
  .specification-content {
     margin-top: 40px;
+ }
+
+ .specification-content .block-pad {
+     padding: 10px 0;
  }
 
 .specification .menu-left .menu-content {
@@ -149,8 +183,30 @@ main .software-list ul li img {
     padding: 10px 0;
 }
 
+/* Slide Section */
+.slide-section .left-chevron,
+.slide-section .right-chevron {
+    line-height: 205px;
+    font-size: 25px;
+}
 
-/* Media Query xs */
+.slide-section .padding-col {
+    padding: 0 15px;
+}
+
+.slide-content {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.slide-content ul {
+    padding-left: 0;
+}
+
+/*  */
+
+
+/* Media Query XS */
 @media all and (max-width: 767px){
     /* MAIN */
     /* Software list */
@@ -171,5 +227,18 @@ main .software-list ul li img {
 
     .specification .specification-content .menu-right img {
         padding-top: 15px;
+    }
+
+    .required-features .required-features-content img {
+       padding-top: 15px;
+    }
+}
+
+/* Media Query SM*/
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .slide-section .left-chevron,
+    .slide-section .right-chevron {
+        line-height: 160px;
+        font-size: 20px;
     }
 }
