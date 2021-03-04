@@ -274,6 +274,58 @@ main .software-list ul li img {
     font-weight: 500;
 }
 
+/* FOOTER */
+footer {
+    background-color: #022262;
+}
+
+footer .social-footer li {
+    display: inline-block;
+}
+
+.footer-text-left p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+footer .social-footer a {
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer p,
+footer a {
+  color: #fff;
+  opacity: 0.6;
+}
+
+footer #opacity-text {
+    color: #fff;
+    opacity: 0.4;
+}
+
+.footer-p-content {
+    padding: 15px 0;
+}
+
+footer h1,
+footer h2, 
+footer h3, 
+footer h4, 
+footer h5 {
+    color: white;
+}
+
+footer .lists-footer a{
+    font-size: 16px;
+    padding-top: 5px;
+    display: block;
+}
+
 /* Media Query XS */
 @media all and (max-width: 767px){
     /* MAIN */
