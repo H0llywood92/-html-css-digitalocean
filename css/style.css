@@ -413,12 +413,10 @@ footer .lists-footer a{
     .fixed-image {
         bottom: 17%;
         left: 5%;
-        margin-bottom: 5px;
     }
 
     .fixed-chat {
         left: 5%;
-        max-width: 40%;
     }
 }
 
