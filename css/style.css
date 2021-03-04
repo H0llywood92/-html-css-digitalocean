@@ -338,7 +338,7 @@ footer .lists-footer a{
 }
 
 .fixed-chat {
-    background: white;
+    background: lightgray;
     position: fixed;
     bottom: 5%;
     right: 15%;
@@ -411,7 +411,7 @@ footer .lists-footer a{
     }
 
     .fixed-image {
-        bottom: 19%;
+        bottom: 20%;
         left: 5%;
     }
 
