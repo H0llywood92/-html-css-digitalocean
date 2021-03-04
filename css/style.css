@@ -365,13 +365,6 @@ footer .lists-footer a{
     text-align: center;
 }
 
-.support-chat::after {
-    content: "f054";
-    color: white;
-    background-color: white;
-    font-size: 10px;
-}
-
 /* Media Query XS */
 @media all and (max-width: 767px){
     /* MAIN */
