@@ -203,8 +203,37 @@ main .software-list ul li img {
     padding-left: 0;
 }
 
-/*  */
+/* Services Regions */
+.services-regions .services-title h2 {
+    color: white;
+}
 
+.services-regions .regions-list ul li{
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.services-regions .regions-list ul li span {
+    width: calc( 100% / 5 );
+}
+
+.services-regions .regions-list ul li p {
+    color: #fff;
+    opacity: 0.6;
+    width: calc( 100% / 2 ) ;
+}
+
+.services-regions .regions-list ul li a {
+    width: calc( 100% / 4) ;
+    color: #00d7d2;
+}
+
+.services-regions .regions-list ul li span,
+.services-regions .regions-list ul li p,
+.services-regions .regions-list ul li a {
+    display: inline-block;
+}
 
 /* Media Query XS */
 @media all and (max-width: 767px){
