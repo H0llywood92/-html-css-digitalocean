@@ -2,6 +2,7 @@
 body {
     font-family: Inter-Regular,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,"sans-serif";
     min-width: 320px;
+    position: relative;
 }
 
 ul {
@@ -338,13 +339,12 @@ footer .lists-footer a{
 
 .fixed-chat {
     background: white;
-    width: 30%;
     position: fixed;
     bottom: 5%;
     right: 15%;
     z-index: 1;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .fixed-image img {
@@ -363,6 +363,20 @@ footer .lists-footer a{
     width: 30px;
     height: 30px;
     text-align: center;
+}
+
+.fixed-chat::after{
+    content: "";
+    position: absolute;
+    right: -8px;
+    bottom: 12px;
+    color: white;
+    background: white;
+    border: 1px solid white;
+    border-radius: 20% 20% 20% 0;
+    width: 20px;
+    height: 20px;
+    transform: rotate(230deg );
 }
 
 /* Media Query XS */
@@ -397,12 +411,14 @@ footer .lists-footer a{
     }
 
     .fixed-image {
-        bottom: 25%;
+        bottom: 17%;
         left: 5%;
     }
 
     .fixed-chat {
         left: 5%;
+        max-height: 15%;
+        max-width: 40%;
     }
 }
 
@@ -425,12 +441,14 @@ footer .lists-footer a{
     /* End Slide section 2 chevron */
 
     .fixed-image {
-        bottom: 25%;
+        bottom: 15%;
         left: 5%;
     }
 
     .fixed-chat {
         left: 5%;
+        max-height: 15%;
+        max-width: 40%;
     }
 
 }
