@@ -370,9 +370,8 @@ footer .lists-footer a{
     position: absolute;
     right: -8px;
     bottom: 12px;
-    color: white;
-    background: white;
-    border: 1px solid white;
+    background: lightgray;
+    border: 1px solid lightgray;
     border-radius: 20% 20% 20% 0;
     width: 20px;
     height: 20px;
