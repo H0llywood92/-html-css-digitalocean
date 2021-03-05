@@ -71,6 +71,19 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
+.custom-button {
+    color: #2485fd;
+    border-color: #2485fd;
+    font-weight: 500;
+}
+
+.custom-button:hover {
+    background-color: #2485fd;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 2px 2px 3px gray;
+}
+
 /* Common Chevron */
 .down-chevron {
     font-size: 9px;
@@ -85,10 +98,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 8px;
 }
 
-.custom-button {
-    color: #2485fd;
-    border-color: #2485fd;
-    font-weight: 500;
+.left-chevron:hover,
+.right-chevron:hover {
+    color: #058bff;
 }
 
 /* HEADER */
@@ -111,6 +123,10 @@ h1, h2, h3, h4, h5, h6 {
 .top-nav ul li a {
     color: #2485fd;
     font-size: 14px
+}
+
+.top-nav ul li a:hover {
+    text-shadow: 1px 1px 2px gray;
 }
 
 /* Burger Menu */
@@ -140,6 +156,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #031b4f;
     padding: 10px 0;
 }
+
 #block-position {
     position: relative;
 }
@@ -150,6 +167,10 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 10px;
     top: 6px;
+}
+
+.banner a.lightblue-text:hover {
+    color: blueviolet;
 }
 
 /* MAIN */
@@ -168,6 +189,10 @@ main .software-list ul li {
 main .software-list ul li img {
     width: 100%;
     height: auto;
+}
+
+main .software-list .software-content a.lightblue-text:hover {
+    color: blueviolet;
 }
 
  /* Specification */
@@ -192,6 +217,7 @@ main .software-list ul li img {
 .specification .menu-left .menu-content li {
     padding: 10px 0;
 }
+
 
 /* Slide Section */
 /* Slide section 1 chevron */
@@ -237,6 +263,10 @@ main .software-list ul li img {
     color: #031b4f;
     font-weight: 500;
 }
+/* Required Features */
+.required-features .required-features-content a:hover {
+    color: blueviolet;
+}
 
 /* Services Regions */
 .services-regions .services-title h2 {
@@ -273,6 +303,10 @@ main .software-list ul li img {
 .get-started .custom-button {
     width: 160px;
     font-weight: 500;
+}
+
+.services-regions .regions-list a:hover {
+    color: blue;
 }
 
 /* FOOTER */
@@ -327,6 +361,16 @@ footer .lists-footer a{
     display: block;
 }
 
+footer .lists-footer a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+footer .social-footer a:hover {
+    color: deepskyblue;
+    text-shadow: 2px 2px 2px grey;
+}
+
 /* Fixed */
 .fixed-image {
     width: 80px;
@@ -348,7 +392,7 @@ footer .lists-footer a{
 }
 
 .fixed-image img {
-    padding: 10px;
+    padding: 10px 5px;
     border-radius: 5px;
     background: linear-gradient(to top left, #001e9a, #001e9a);
 }
